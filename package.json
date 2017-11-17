@@ -2,7 +2,7 @@
   "scripts": {
     "dev": "webpack -d",
     "prod": "webpack -p",
-	"start": "nodemon server.js"
+    "start": "nodemon server.js"
   },
   "name": "user-login-template",
   "version": "1.0.0",
