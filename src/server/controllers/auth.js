@@ -1,4 +1,4 @@
-mconst User = require('mongoose').model('User');
+const User = require('mongoose').model('User');
 const errorHandler = require('../utils/error-handler');
 
 module.exports = {
