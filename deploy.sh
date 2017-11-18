@@ -18,7 +18,7 @@ echo "Complete"
 
 echo "Installing n"
 sudo npm install -g n > /dev/null
-sudo n stable
+sudo n 8.4.0
 echo "complete"
 
 echo "Installing nginx"
@@ -27,6 +27,7 @@ echo "Complete"
 
 echo "Configuring nginx to serve MEAN app"
 sudo touch /etc/nginx/sites-available/$proj
+sudo chown ubuntu /etc/nginx/sites-available/$proj
 nginx_text="server {
         listen 80;
         location / {
