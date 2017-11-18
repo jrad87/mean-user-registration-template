@@ -18,7 +18,7 @@ echo "Complete"
 
 echo "Installing n"
 sudo npm install -g n > /dev/null
-sudo n 6.9.5 > /dev/null
+sudo n stable
 echo "complete"
 
 echo "Installing nginx"
