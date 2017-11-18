@@ -53,16 +53,12 @@ pm2 restart 0 > /dev/null
 sudo service nginx reload && sudo service nginx restart
 echo "Complete"
 
-echo "Installing bower"
-sudo npm install bower -g > /dev/null
-echo "Complete"
-
 echo "Installing node modules"
 sudo npm install > /dev/null
 echo "Complete"
 
-echo "Installing bower components"
-sudo bower install --allow-root > /dev/null
+echo "Running webpack build for production"
+sudo npm run prod > /dev/null
 echo "Complete"
 
 echo "Installing and configuing mongo"

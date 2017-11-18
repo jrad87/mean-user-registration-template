@@ -9,5 +9,5 @@ mongoose.connection.on('connected', () => console.log('mongodb connected'));
 mongoose.Promise = global.Promise;
 
 fs.readdirSync(modelsDir).forEach(file => {
-	if(js.test(file)) require(path.join(modelsDir, file));
+    if(js.test(file)) require(path.join(modelsDir, file));
 });

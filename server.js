@@ -10,16 +10,16 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}))
 
 app.use(session({
-	saveUninitialized: true,
-	resave: false,
-	rolling: true,
-	name: 'currentUser',
-	secret: 'kmklkmklkmklkm',
-	cookie: {
-		secure: false,
-		httpOnly: false,
-		maxAge: 86400 * 1000
-	}
+    saveUninitialized: true,
+    resave: false,
+    rolling: true,
+    name: 'currentUser',
+    secret: 'kmklkmklkmklkm',
+    cookie: {
+	secure: false,
+	httpOnly: false,
+	maxAge: 86400 * 1000
+    }
 }));
 app.use(cookieParser('hjhbhjhbhjsfdsdsasd'));
 
