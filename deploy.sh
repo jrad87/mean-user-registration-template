@@ -58,9 +58,9 @@ echo "Installing node modules"
 sudo npm install 
 echo "Complete"
 
-#echo "Running webpack build for production"
-#sudo npm run prod
-#echo "Complete"
+echo "Running webpack build for production"
+sudo npm run prod
+echo "Complete"
 
 echo "Installing and configuing mongo"
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 0C49F3730359A14518585931BC711F9BA15703C6
