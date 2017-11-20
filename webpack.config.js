@@ -19,7 +19,7 @@ module.exports = {
 	    }, {
 		test: /\.html$/,
 		loader: 'html',
-		include: `${APP_DIR}/partials`
+		include: `${BUILD_DIR}/partials`
 	    }
 	]
     }
